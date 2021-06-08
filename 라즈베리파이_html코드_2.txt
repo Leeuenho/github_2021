@@ -1,0 +1,14 @@
+<html>
+    <head> 
+    <title>Home</title> 
+    </head>
+ 
+    <body>
+        <h1>Lock and Door</h1>
+        <hr>
+        <div>
+             <button type = "button" onclick = "location.href = 'https://192.168.0.8/open'"> open </buttom>
+	<button type = "button" onclick = "location.href = 'https://192.168.0.8/close'"> close </button>
+        </div>
+    </body>
+</html>
