@@ -1,0 +1,16 @@
+﻿import serial
+import time
+
+Port = '/dev/ttyACM0'
+BaudRate = 9600
+
+ard = serial.Serial(Port, BaudRate)
+
+while(1):
+     print("state 입력 : ")
+     c = input()
+
+     c = c.encode('utf-8')
+     ard.write(c)
+     print("moter")
+     time.sleep(0.5)
