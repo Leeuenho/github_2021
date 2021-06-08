@@ -1,0 +1,8 @@
+#라즈베리파이 Opencv
+
+
+참고)
+https://blog.naver.com/roboholic84/221139256044
+https://ultrakid.tistory.com/10
+
+
