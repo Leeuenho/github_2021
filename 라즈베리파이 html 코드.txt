@@ -1,0 +1,14 @@
+<html>
+    <head> 
+    <title>Home</title> 
+    </head>
+ 
+    <body>
+        <h1>Lock and Door</h1>
+        <hr>
+        <div>
+             <button> open </buttom>
+	<button> close </button>
+        </div>
+    </body>
+</html>
