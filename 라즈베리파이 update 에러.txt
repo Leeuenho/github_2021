@@ -1,0 +1,1 @@
+update archieve.rapsberrypi.org 주소를 알아 내는데 실패 했다는 에러 발생 >  sudo apt update && sudo apt upgrade
