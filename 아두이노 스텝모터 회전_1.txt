@@ -1,0 +1,67 @@
+#define Step 7
+
+#define Dir  6
+
+int vit  =   5;   // Speed of the rotation (smaller means faster rotation)
+
+
+     
+
+void setup()
+
+{
+  Serial.begin(9600);
+
+pinMode( Step  , OUTPUT );
+
+pinMode( Dir   , OUTPUT );
+
+}
+
+int flag = HIGH;
+
+long state = 0;
+
+void loop()
+
+{
+  if(Serial.available()>0 ) {
+
+  state = Serial.parseInt();
+
+    if(state == 1){
+      digitalWrite( Dir   , HIGH);
+      
+      for ( int i = 0; i < 4096; i++)
+      
+       {
+      
+      digitalWrite( Step  , flag);
+      
+      delay(vit);
+      
+      flag = !flag;
+        
+       }
+    }
+    
+    if(state ==2){
+      digitalWrite( Dir   , LOW);
+      
+      for ( int i = 0; i < 4096; i++)
+      
+       {
+      
+      digitalWrite( Step  , flag);
+      
+      delay(vit);
+      
+      flag = !flag;
+      
+       }
+     
+    }
+
+  }
+
+}
