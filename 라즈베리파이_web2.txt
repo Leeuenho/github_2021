@@ -1,0 +1,33 @@
+from flask import Flask, render_template
+import serial
+import time
+
+ard = serial.Serial('/dev/ttyACMO', 9600)
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello() :
+     return render_template('index.html')
+
+@app.route('/open')
+def opening() :
+     c = '1'
+     c = c.encode('utf-8')
+     ard.write(c)
+     time.sleep(0.5)
+     return 'Openning'
+
+@app.route('/'close')
+def closing() :
+     c = '2'
+     c =c .encode('utf-8')
+     ard.write(c)
+     time.sleep(0.5)
+     return 'Closing'
+
+
+
+
+if __name__ == '__main__' :
+     app.run(debug=True, port=80, host='0.0.0.0')
