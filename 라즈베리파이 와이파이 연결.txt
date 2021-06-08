@@ -1,0 +1,10 @@
+라즈베리파이 유선은 연결 가능하나 무선 연결이 불가한 상태 지속됨
+
+참고 : https://kbs4674.tistory.com/135 
+
+
+sudo apt install net-work-manager //네트워크 메니저 패키지 설치
+
+sudo nmcli dev wifi con "와이파이 이름" password "비밀번호" //와이파이 이름과 비밀번호 입력해서 연결해주기
+
+//SSID = service set identifier 무선랜을 구별해주는 고유 식별자
